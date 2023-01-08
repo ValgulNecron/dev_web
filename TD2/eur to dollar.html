@@ -1,0 +1,34 @@
+<html><head>
+<script>
+function toEuros() {
+ var val;
+ val=document.convertisseur.dollarS.value;
+ if (isNaN(val)) {
+ alert("Vous devez saisir une valeur numérique !");
+ document.convertisseur.dollarS.focus();
+ }
+ else
+ document.convertisseur.euros.value=val*0.96455;
+}
+function todollarS() {
+ var val;
+ val=document.convertisseur.euros.value;
+ if (isNaN(val)) {
+ alert("Vous devez saisir une valeur numérique !");
+ document.convertisseur.euros.focus();
+ }
+ else
+ document.convertisseur.dollarS.value=val/0.96455;
+}
+</script>
+</head>
+<body>
+<h1>Convertisseur dollar<--> euros</h1>
+<hr />
+<form name="convertisseur">
+Montant en dollar :&nbsp&nbsp&nbsp
+<input type=text size=5 name="dollarS" onChange="toEuros();" />
+<br />Montant en euros :&nbsp&nbsp&nbsp
+<input type=text size=5 name="euros" onChange="todollarS();" />
+</form>
+</body></html> 

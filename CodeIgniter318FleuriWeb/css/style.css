@@ -1,0 +1,33 @@
+table
+{
+	width: 100%;
+	border-width:1px; 
+	border-style:solid; 
+	border-color:black;
+}
+td
+{ 
+	border-width:1px;
+	border-style:solid; 
+	border-color:black;
+}
+p, span
+{
+	font-size: 20px;
+	margin: 10px;
+}
+span
+{
+	margin-right: 100px;
+	margin-left: 100px;
+}
+body
+{
+	text-align: center;
+}
+a
+{
+	text-decoration:none;
+	margin-right: 20px;
+	margin-left: 20px;
+}

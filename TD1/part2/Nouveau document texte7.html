@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+function message() {
+ var nom;
+ nom=document.forms.saisie.nomSaisi.value;
+ alert("coucou");
+ alert("qui a cliqué ?");
+ alert("C'est " + nom + " bien sûr !");
+}
+</script>
+</head>
+<body>
+<form name="saisie" action="javascript:message()">
+Entrez votre nom<input type="text" name="nomSaisi"><br />
+<input type="submit" value="envoyer">
+</form>
+</body>
+</html> 

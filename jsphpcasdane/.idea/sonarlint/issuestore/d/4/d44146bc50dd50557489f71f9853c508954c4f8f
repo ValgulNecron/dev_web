@@ -1,0 +1,7 @@
+
+f	php:S1808
+"JPut one space between the closing parenthesis and the opening curly brace.(´ŞŞÕ8—ü°ÖĞ0
+:php:S113"'Add a new line at the end of this file.8—ü°ÖĞ0
+m	php:S4833"QReplace "require_once" with namespace import mechanism through the "use" keyword.(êÅº8šü°ÖĞ0
+Rphp:S131
+"7Add a "case default" clause to this "switch" statement.(´ŞŞÕ8šü°ÖĞ0

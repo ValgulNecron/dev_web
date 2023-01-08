@@ -1,0 +1,89 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Formulaire Porte Ouverte 2022</title>
+    <link rel="stylesheet" href="<?php echo base_url().'css/formulaire.css';?>">
+</head>
+<body>
+    <header>
+		<table>
+			<tr>
+				<td>
+					<img id="headerLogo" src="<?php echo base_url().'img/logoNomLycee.png';?>">
+				</td>
+				<td>
+					<h2>Formulaire Portes Ouvertes René Cassin</h2>
+				</td>
+				<td>
+					<a href="<?php echo site_url('Welcome/index') ?>"><img src="<?php echo base_url().'img/logoCompte.png';?>"></a>
+				</td>
+			</tr>
+		</table>
+    </header>
+	<?php echo form_open('Welcome/formulaire'); ?>
+		<div id="alignementAuCentre">
+			<fieldset>
+				<legend><h2 class="titreSecondaire" >Informations obligatoires</h2></legend>
+				<label>Nom :</label>
+				<input type="text" name="nom" required>
+				<br>
+				<label>Prénom :</label>
+				<input type="text" name="prenom" required>
+				<br>
+				<label>Etablissement actuel :</label>
+				<input type="text" name="etabliOrig" required>
+				<br>
+				<label>Formation actuelle :</label>
+				<input type="text" name="formaActu" required>
+				<br>
+				<label>Etes-vous interessé par la formation :</label>
+				<br>
+				<label for="intereFormaBout">Oui</label>
+				<input type="radio" value="1" name="intereForma">
+				<label for="intereFormaBout">Non</label>
+				<input type="radio" value="0" name="intereForma" checked>
+				<br>
+				<label>Pensez-vous postulez pour la même formation dans un</label>
+				<br>
+				<label>établissement différent :</label>
+				<br>
+				<label for="postulAutreEta">Oui</label>
+				<input type="radio" value="1" name="postulAutreEta">
+				<label for="postulAutreEta">Non</label>
+				<input type="radio" value="0" name="postulAutreEta" checked>
+			</fieldset>
+			<fieldset>
+				<legend><h2 class="titreSecondaire" >Informations additionnelles</h2></legend>
+				<!-- J'ai utilisé "VALUE" pour ne pas avoir de valeur vide inserré dans la base de données car cela n'est pas accepté par PHP, le visiteur devra alors supprimer la valeur par defaut et insérer ses données -->
+				<label>Numéro de rue :</label>
+				<input type="text" name="numRue" value="RUE">
+				<br>
+				<label>Nom de la rue :</label>
+				<input type="text" name="nomRue" value="RUE">
+				<br>
+				<label>Nom de la ville :</label>
+				<input type="text" name="nomVille" value="VILLE">
+				<br>
+				<label >Code postale :</label>
+				<input type="text" name="codePost" value="00000">
+				<br>
+				<label>Adresse E-mail :</label>
+				<input type="email" name="mail" value="votremail@exemple.fr">
+				<br>
+				<label>Numéro de téléphone :</label>
+				<input type="tel" name="numTel" value="0000000000">
+			</fieldset>
+		</div>
+		<div class="envoyerForm">
+			<input id="boutonDonnéesPerso" type="checkbox" name="boutonDonneesPerso" required>
+			<!-- target="_blank" permet d'ouvrir la page dans une nouvelle fenetre -->
+			<label for="boutonDonnéesPerso">En cochant cette case vous acceptez que vos données personnelles soient recueilli dans le cadre de la journée porte ouverte. <a href="../Mentions legales/mentionsLegales.html" target="_blank">Mentions légales</a></label>
+		</div>
+		<button class="bouton" type="submit" for="entresFormulaire">Envoyer</button>
+	<?php echo form_close(); ?>
+</body>
+</html>

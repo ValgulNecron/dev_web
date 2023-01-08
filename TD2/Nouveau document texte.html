@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+function message(texte) {
+ document.forms.evt.res.value=texte;
+}
+</script></head>
+<body>
+<img
+ src="ordichapeau.gif"
+ onClick="message('Vous avez cliqué');"
+ onMouseOver="message('vous passez');"
+ onMouseOut="message('vous repartez');"
+/>
+<form name="evt">
+<input type="text" name="res" />
+</form>
+</body>
+</html> 

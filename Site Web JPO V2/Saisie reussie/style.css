@@ -1,0 +1,31 @@
+#alignementAuCentre
+{
+	display: flex;
+	justify-content: center;
+}
+#divMessage
+{
+	background-color: #8e959c;
+	padding: 10px;
+	margin: 10px;
+	box-shadow: 3px 3px 3px 3px #f67c1a;
+}
+p
+{
+	font-size: 20px;
+}
+.bouton
+{
+	background-color: #f67c1a;
+	border: none;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	font-size: 20px;
+	margin-top: 10px;
+}
+

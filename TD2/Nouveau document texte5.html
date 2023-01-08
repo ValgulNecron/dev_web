@@ -1,0 +1,34 @@
+<html><head>
+<script>
+function toEuros() {
+ var val;
+ val=document.convertisseur.francS.value;
+ if (isNaN(val)) {
+ alert("Vous devez saisir une valeur numérique !");
+ document.convertisseur.francS.focus();
+ }
+ else
+ document.convertisseur.euros.value=0.855 * val;
+}
+function toFrancs() {
+ var val;
+ val=document.convertisseur.euros.value;
+ if (isNaN(val)) {
+ alert("Vous devez saisir une valeur numérique !");
+ document.convertisseur.euros.focus();
+ }
+ else
+ document.convertisseur.francS.value=(1/0.855) * val;
+}
+</script>
+</head>
+<body>
+<h1>Convertisseur francs Suisses <--> euros</h1>
+<hr />
+<form name="convertisseur">
+Montant en francs Suisses :&nbsp&nbsp&nbsp
+<input type=text size=5 name="francS" onChange="toEuros();" />
+<br />Montant en euros :&nbsp&nbsp&nbsp
+<input type=text size=5 name="euros" onChange="toFrancs();" />
+</form>
+</body></html> 

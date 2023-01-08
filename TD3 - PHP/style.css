@@ -1,0 +1,21 @@
+table,td
+{
+    border: 1px solid #333;
+	padding: 5px;
+}
+thead
+{
+    background-color: #333;
+    color: #fff;
+}
+form, table, h1
+{
+	text-align: center;
+	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table, input, select, html, button
+{
+	font-size: 20px;
+}

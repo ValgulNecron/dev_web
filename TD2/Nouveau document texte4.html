@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+function changeImage() {
+ document.zone.src=tabImages[numImage];
+ if (numImage==2)
+ numImage=0;
+ else
+ numImage++;
+ setTimeout("changeImage()",1000);
+}
+</script></head>
+<body>
+<script>
+var tabImages=new Array(3);
+var numImage=1;
+tabImages[0]="zone1.gif";
+tabImages[1]="zone2.gif";
+tabImages[2]="zone3.gif";
+setTimeout("changeImage()",1000);
+</script>
+<img name="zone" src="zone1.gif" />
+</body>
+</html> 

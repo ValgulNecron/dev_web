@@ -1,0 +1,39 @@
+body, .bouton, input, select
+{
+	font-size: 20px;
+	padding: 10px;
+	margin: 10px;
+}
+div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form
+{
+	background-color: #8e959c;
+	padding: 10px;
+	border-radius: 30px;
+}
+input, select
+{
+	border-color: #f67c1a;
+}
+p
+{
+	text-align: center;
+	color: #f67c1a;
+}
+.bouton
+{
+	background-color: #f67c1a;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+}
